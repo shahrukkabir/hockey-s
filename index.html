@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  data-theme="light">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -18,125 +18,237 @@
     <!-- tailwind custom color -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'back-primary': '#FF4240',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'back-primary': '#FF4240',
+                    }
+                }
             }
-          }
         }
-      </script>
-      
-      <style>
-        .font-manrope{
+    </script>
+
+    <style>
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
-      </style>
-      
+    </style>
+
 
 </head>
 
 <body class="font-manrope">
-            <!-- header start -->
-            <header class="container mx-auto">
-            <section>
-                <!-- Navbar start -->
-                <div class="navbar bg-base-100 lg:px-9">
-                    <div class="navbar-start">
-                        <div class="dropdown">
-                            <div tabindex="0" role="button"
-                                class="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor"><path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                            </div>
-                            <ul tabindex="0"
-                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Home</a></li>
-                                <li><a>About</a></li>
-                                <li><a>Pages</a></li>
-                                <li><a>Blog</a></li>
-                                <li><a>Contact</a></li>
-                                <li><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                               
-                            </ul>
+    <!-- header start -->
+    <header class="container mx-auto">
+        <section>
+            <!-- Navbar start -->
+            <div class="navbar bg-base-100 lg:px-9">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
                         </div>
-                        <a class="btn btn-ghost font-bold text-xl lg:text-4xl">Hockey<span class="text-back-primary">’</span>s</a>
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
-                            <li class="text-back-primary"><a
-                                    class="hover:text-blue-700 duration-200">Home</a></li>
-                            <li><a
-                                    class="hover:text-blue-700 duration-200">About</a></li>
-                            <li><a
-                                    class="hover:text-blue-700 duration-200">Pages</a></li>
-                            <li><a
-                                    class="hover:text-blue-700 duration-200">Blog</a></li>
-                            <li><a
-                                    class="hover:text-blue-700 duration-200">Contact</a></li>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                            <li><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+
                         </ul>
                     </div>
-                    <div class="navbar-end gap-6 cursor-pointer">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <a class="btn btn-error text-white font-bold">Get Ticket</a>
+                    <a class="btn btn-ghost font-bold text-xl lg:text-4xl">Hockey<span
+                            class="text-back-primary">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-back-primary"><a class="hover:text-blue-700 duration-200">Home</a></li>
+                        <li><a class="hover:text-blue-700 duration-200">About</a></li>
+                        <li><a class="hover:text-blue-700 duration-200">Pages</a></li>
+                        <li><a class="hover:text-blue-700 duration-200">Blog</a></li>
+                        <li><a class="hover:text-blue-700 duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-6 cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn btn-error text-white font-bold">Get Ticket</a>
+                </div>
+            </div>
+        </section>
+        <!-- Navbar end -->
+        <!-- carousel or slider section -->
+        <section class="my-20 mx-5 lg:mx-32">
+
+            <div class="carousel w-full lg:h-[550px]">
+                <!-- slide-1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+
+                    <div
+                        class="absolute flex justify-between lg:justify-start  gap-6 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[75%]">
+                        <a href="#slide3"
+                            class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❮</a>
+                        <a href="#slide2" class="btn btn-circle lg:bg-black lg:text-white lg:hover:text-black">❯</a>
                     </div>
                 </div>
-            </section>
-                <!-- Navbar end -->
-               <!-- carousel or slider section -->
-                <section class="my-20 mx-5 lg:mx-32">
-
-                    <div class="carousel w-full lg:h-[550px]">
-                        <!-- slide-1 -->
-                        <div id="slide1" class="carousel-item relative w-full">
-                          <img src="Images/1.png" class="w-full" />
-                          
-                          <div class="absolute flex justify-between lg:justify-start  gap-6 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[75%]">
-                            <a href="#slide3" class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❮</a>
-                            <a href="#slide2" class="btn btn-circle lg:bg-black lg:text-white lg:hover:text-black">❯</a>
-                        </div>
-                        </div> 
-                        <!-- slide 2 -->
-                        <div id="slide2" class="carousel-item relative w-full">
-                          <img src="Images/3.png" class="w-full" />
-                          <div class="absolute flex justify-between lg:justify-start  gap-6 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[75%]">
-                            <a href="#slide1" class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❮</a>
-                            <a href="#slide3" class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❯</a>
-                        </div>
-                        </div> 
-                        <!-- slide 3 -->
-                        <div id="slide3" class="carousel-item relative w-full">
-                          <img src="Images/4.png" class="w-full" />
-                          <div class="absolute flex justify-between lg:justify-start  gap-6 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[75%]">
-                            <a href="#slide2" class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❮</a>
-                            <a href="#slide1" class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❯</a>
-                        </div>
-                        </div>
-                      </div>
-                      <!-- badge section -->
-                    <div class="bg-black lg:w-[566px] lg:h-[165px] rounded-2xl">
-                     
-                    <div class="p-8">
-                        <h4 class="text-2xl mb-5 text-white font-extrabold">Meet all the heroes from the field</h4>
-                        <p class="text-base font-medium text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full" />
+                    <div
+                        class="absolute flex justify-between lg:justify-start  gap-6 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[75%]">
+                        <a href="#slide1"
+                            class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❮</a>
+                        <a href="#slide3"
+                            class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❯</a>
                     </div>
- 
-                    </div>  
+                </div>
+                <!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full" />
+                    <div
+                        class="absolute flex justify-between lg:justify-start  gap-6 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[75%]">
+                        <a href="#slide2"
+                            class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❮</a>
+                        <a href="#slide1"
+                            class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- badge section -->
+            <div class="bg-black mt-4 lg:w-[566px] lg:h-[165px] rounded-2xl lg:ml-[707px] lg:mr-[167px]">
+                <div class="p-8">
+                    <h4 class="text-2xl mb-5 text-white font-extrabold">Meet all the heroes from the field</h4>
+                    <p class="text-base font-medium text-gray-400">Dit amet consectetur. Condimentum dignissim
+                        adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
 
-                </section>
-           <!-- end slider section -->
+            </div>
 
-            </header> 
-            <!-- header end -->
-    
+
+        </section>
+        <!-- end slider section -->
+
+    </header>
+    <!-- header end -->
+
     <main>
 
+        
+        <hr>
+        
+        <!-- hockeys club section -->
+        <section class="my-28">
+            <div class="text-center w-full lg:w-3/4 mx-auto space-y-5">
+                <h2 class="text-3xl lg:text-4xl font-extrabold">Professional Hockeys
+                    Club</h2>
+                <p class="text-stone-500 font-normal text-center mx-auto w-[300px] lg:w-[600px] ">Professional hockey clubs stand
+                    as the heartbeat of the exhilarating world of ice hockey, captivating fans with their skillful
+                    plays, intense rivalries, and the pursuit of sporting glory.</p>
+            </div>
+        </section>
+        <!-- end hockeys club section -->
+        <hr>
+        <!-- card section -->
+        <section class="my-28 bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 lg:mx-32 gap-5">
+                <!-- card-1 -->
+                <div class="border border-gray-200 rounded space-y-7 p-6 flex flex-col justify-center items-center ">
+                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+                    <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                    <p class="text-stone-500 font-normal text-center">A well-conceived prayer facility,a prayer facility can truly serve as a sanctuary for all.
+                </div>
+                <!-- card-2 -->
+                <div class="border border-gray-200 rounded space-y-7 p-6 flex flex-col justify-center items-center">
+                    <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
+                    <h3 class="text-xl font-semibold">Experienced Coach</h3>
+                    <p class="text-stone-500 font-normal text-center">An experienced coach plays a pivotal role in guiding individuals towards personal and professional success. 
+
+                </div>
+                <!-- card-3 -->
+                <div class="border border-gray-200 rounded space-y-7 p-6 flex flex-col justify-center items-center">
+                    <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="text-xl font-semibold">Senior Player</h3>
+                    <p class="text-stone-500 font-normal text-center">A senior player, seasoned in skill and wisdom, brings invaluable experience and leadership to the team</p>
+
+                </div>
+                <!-- card-4 -->
+                <div class="border border-gray-200 rounded space-y-7 p-6 flex flex-col justify-center items-center">
+                    <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
+                    <h3 class="text-xl font-semibold">Training
+                        Ground</h3>
+                    <p class="text-stone-500 font-normal text-center">The training ground, a crucible for athletes, is where dedication meets effort, shaping champions.</p>
+                </div>
+            </div>
+        </section>
+        <!-- card section -->
+        <hr>
+        <!-- program section -->
+        <hr>
+        <section class="my-28">
+            <div class="text-center w-full lg:w-3/4 mx-auto space-y-5">
+                <h2 class="text-3xl lg:text-4xl font-extrabold">Program Sections</h2>
+                <p class="text-stone-500 font-normal text-center mx-auto w-[300px] lg:w-[600px] ">Through a diverse range of programs, we invite individuals of all ages to join us on this exhilarating journey on and off the ice.</p>
+            </div>
+        </section>
+        <!-- program section -->
+        <hr>
+        <!-- image card section -->
+        <section class="my-28">
+
+            <div class="grid grid-cols-2 mx-auto items-center mb-28">
+                <!-- card-1 -->
+                <div class="card w-full lg:w-[500px] bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full"
+                            src="Images/2.png"
+                            alt="hockey-stick" /></figure>
+                    <div class="card-body text-white space-y-4">
+                        <h2 class="card-title text-3xl font-extrabold">Junior Program</h2>
+                        <p class="flex-grow-0">We have Junior Programme for 6-12years Age.We have extra Coach for Junior Programme  </p>
+                        <div class="card-actions justify-start">
+                            <button class="btn btn-error text-xl text-white font-bold">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card w-full lg:w-[500px] bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full"
+                            src="Images/3.png"
+                            alt="hockey-stick" /></figure>
+                    <div class="card-body text-white space-y-4">
+                        <h2 class="card-title text-3xl font-extrabold">Teenager Program</h2>
+                        <p class="flex-grow-0">We have Teenager Program for 13-19years Age.For female we have separated ground and female Coach</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn btn-error text-xl text-white font-bold">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div>    
+                <!-- card-3 -->
+                <div class="card w-full col-auto lg:col-span-2 bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full"
+                            src="Images/4.png"
+                            alt="hockey-stick" /></figure>
+                    <div class="card-body justify-end text-white space-y-4">
+                        <h2 class="card-title text-3xl font-extrabold">Professional Program</h2>
+                        <p class="flex-grow-0">We have Professional Program for 20+ years Age. Different types of facilitys are available for adults.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn btn-error text-xl text-white font-bold">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end image card section -->
+        <hr>
     </main>
     <footer>
 
