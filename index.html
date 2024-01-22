@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
+    <title>Hockey</title>
     <!--manrope google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,6 +41,7 @@
 <body class="font-manrope">
             <!-- header start -->
             <header class="container mx-auto">
+            <section>
                 <!-- Navbar start -->
                 <div class="navbar bg-base-100 lg:px-9">
                     <div class="navbar-start">
@@ -86,8 +87,52 @@
                         <a class="btn btn-error text-white font-bold">Get Ticket</a>
                     </div>
                 </div>
+            </section>
                 <!-- Navbar end -->
-            </header>
+               <!-- carousel or slider section -->
+                <section class="my-20 mx-5 lg:mx-32">
+
+                    <div class="carousel w-full lg:h-[550px]">
+                        <!-- slide-1 -->
+                        <div id="slide1" class="carousel-item relative w-full">
+                          <img src="Images/1.png" class="w-full" />
+                          
+                          <div class="absolute flex justify-between lg:justify-start  gap-6 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[75%]">
+                            <a href="#slide3" class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❮</a>
+                            <a href="#slide2" class="btn btn-circle lg:bg-black lg:text-white lg:hover:text-black">❯</a>
+                        </div>
+                        </div> 
+                        <!-- slide 2 -->
+                        <div id="slide2" class="carousel-item relative w-full">
+                          <img src="Images/3.png" class="w-full" />
+                          <div class="absolute flex justify-between lg:justify-start  gap-6 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[75%]">
+                            <a href="#slide1" class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❮</a>
+                            <a href="#slide3" class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❯</a>
+                        </div>
+                        </div> 
+                        <!-- slide 3 -->
+                        <div id="slide3" class="carousel-item relative w-full">
+                          <img src="Images/4.png" class="w-full" />
+                          <div class="absolute flex justify-between lg:justify-start  gap-6 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[75%]">
+                            <a href="#slide2" class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❮</a>
+                            <a href="#slide1" class="btn btn-circle lg:bg-black lg:text-white lg:hover:bg-none lg:hover:text-black">❯</a>
+                        </div>
+                        </div>
+                      </div>
+                      <!-- badge section -->
+                    <div class="bg-black lg:w-[566px] lg:h-[165px] rounded-2xl">
+                     
+                    <div class="p-8">
+                        <h4 class="text-2xl mb-5 text-white font-extrabold">Meet all the heroes from the field</h4>
+                        <p class="text-base font-medium text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                    </div>
+ 
+                    </div>  
+
+                </section>
+           <!-- end slider section -->
+
+            </header> 
             <!-- header end -->
     
     <main>
